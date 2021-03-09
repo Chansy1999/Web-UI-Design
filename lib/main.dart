@@ -608,7 +608,7 @@ class _WebBodyState extends State<WebBody> {
                 ),
               ), // Get the last form Melior Card,
               SizedBox(height: 80),
-              // Get the last from Melior Card
+              // Get the lastest from Melior Card
               Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: aHorizontalPadding),
@@ -630,7 +630,7 @@ class _WebBodyState extends State<WebBody> {
                   child: Column(
                     children: [
                       Text(
-                        "Get the last form Melior",
+                        "Get the lastest from Melior",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -1505,7 +1505,236 @@ class _WebBodyState extends State<WebBody> {
                   ],
                 ),
               ),
+              SizedBox(height: 160),
+              // Ready to started
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: aHorizontalPadding),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  decoration: BoxDecoration(
+                    color: aWhiteColor,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                        color: aOrangeColor.withOpacity(0.20),
+                        spreadRadius: 10,
+                        blurRadius: 20,
+                        offset: Offset(0, 0),
+                      ),
+                    ],
+                  ),
+                  padding: EdgeInsets.all(40),
+                  child: Column(
+                    children: [
+                      Text(
+                        "Ready to get started?",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: aBlackColor,
+                          letterSpacing: 1.5,
+                        ),
+                      ),
+                      SizedBox(height: 16),
+                      Text(
+                        "Get in touch of create an account",
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: aGreyColor,
+                          letterSpacing: 1.5,
+                        ),
+                      ),
+                      SizedBox(height: 32),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          MaterialButton(
+                            height: 56,
+                            onPressed: () {},
+                            color: aBlueColor,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(50),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 16,
+                              ),
+                              child: Text(
+                                "JION WHITELIST",
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: aWhiteColor,
+                                  fontWeight: FontWeight.bold,
+                                  letterSpacing: 1.5,
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(width: 20),
+                          MaterialButton(
+                            height: 56,
+                            onPressed: () {},
+                            color: aOrangeColor,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(50),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 16,
+                              ),
+                              child: Text(
+                                "BUY CION NOW",
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: aWhiteColor,
+                                  fontWeight: FontWeight.bold,
+                                  letterSpacing: 1.5,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
               SizedBox(height: 80),
+              // Footer
+              Container(
+                decoration: BoxDecoration(
+                  color: aOrangeColor,
+                ),
+                padding: EdgeInsets.symmetric(
+                  horizontal: aHorizontalPadding,
+                  vertical: 64,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.change_history_rounded,
+                          size: 50,
+                          color: aWhiteColor,
+                        ),
+                        Text(
+                          "MELION AI",
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: aWhiteColor,
+                            letterSpacing: 1.5,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 32),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(50),
+                              color: aWhiteColor),
+                          padding: EdgeInsets.all(16),
+                          child: Text(
+                            "ABOUT",
+                            style: TextStyle(
+                              color: aOrangeColor,
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 1.5,
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 16),
+                        Text(
+                          "WHY INVEST",
+                          style: TextStyle(
+                            color: aWhiteColor,
+                            fontSize: 14,
+                            letterSpacing: 1.5,
+                          ),
+                        ),
+                        SizedBox(width: 16),
+                        Text(
+                          "WHITE PAPER",
+                          style: TextStyle(
+                            color: aWhiteColor,
+                            fontSize: 14,
+                            letterSpacing: 1.5,
+                          ),
+                        ),
+                        SizedBox(width: 16),
+                        Text(
+                          "USER",
+                          style: TextStyle(
+                            color: aWhiteColor,
+                            fontSize: 14,
+                            letterSpacing: 1.5,
+                          ),
+                        ),
+                        SizedBox(width: 16),
+                        Text(
+                          "CONTACT",
+                          style: TextStyle(
+                            color: aWhiteColor,
+                            fontSize: 14,
+                            letterSpacing: 1.5,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 32),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          padding: EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: aWhiteColor,
+                          ),
+                          child: Icon(
+                            Icons.brightness_auto_rounded,
+                            color: aOrangeColor,
+                            size: 30,
+                          ),
+                        ),
+                        SizedBox(width: 32),
+                        Container(
+                          padding: EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: aWhiteColor,
+                          ),
+                          child: Icon(
+                            Icons.brightness_auto_rounded,
+                            color: aOrangeColor,
+                            size: 30,
+                          ),
+                        ),
+                        SizedBox(width: 32),
+                        Container(
+                          padding: EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: aWhiteColor,
+                          ),
+                          child: Icon(
+                            Icons.brightness_auto_rounded,
+                            color: aOrangeColor,
+                            size: 30,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
